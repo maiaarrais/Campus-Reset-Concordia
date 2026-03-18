@@ -144,13 +144,14 @@
 
   .hero-right {
     position: relative; overflow: hidden;
-    background: var(--matcha-pale);
+    background-image: url("../images/jmsb.jpg");
+    background-size: cover;
+    background-position: center;
   }
   .hero-right::before {
     content: '';
     position: absolute; inset: 0;
-    background: linear-gradient(135deg, #C8DDB8 0%, #8FAF7E 45%, #5A7A52 100%);
-    opacity: 0.55;
+    background: linear-gradient(135deg, rgba(200,221,184,0.55) 0%, rgba(90,122,82,0.65) 100%);
   }
   .hero-pattern {
     position: absolute; inset: 0;
@@ -170,26 +171,9 @@
     padding: 1.8rem 2rem; border-radius: 1rem;
     border-left: 3px solid var(--matcha);
   }
-  .hero-quote1 {
-    position: absolute; top: 3rem; left: 3rem; right: 3rem;
-    background: rgba(247,249,244,0.92); backdrop-filter: blur(10px);
-    padding: 1.8rem 2rem; border-radius: 1rem;
-    border-left: 3px solid var(--matcha);
-  }
-  .hero-quote2 {
-    position: absolute; top: 15rem; left: 3rem; right: 3rem;
-    background: rgba(247,249,244,0.92); backdrop-filter: blur(10px);
-    padding: 1.8rem 2rem; border-radius: 1rem;
-    border-left: 3px solid var(--matcha);
-  }
-  .hero-quote3 {
-    position: absolute; bottom: 15rem; left: 3rem; right: 3rem;
-    background: rgba(247,249,244,0.92); backdrop-filter: blur(10px);
-    padding: 1.8rem 2rem; border-radius: 1rem;
-    border-left: 3px solid var(--matcha);
-  }
-  .hero-quote p, .hero-quote1 p { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic; color: var(--deep); line-height: 1.5; }
-  .hero-quote cite , .hero-quote1 cite { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem; display: block; }
+
+  .hero-quote p { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic; color: var(--deep); line-height: 1.5; }
+  .hero-quote cite { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem; display: block; }
 
   /* ── BENEFITS STRIP ── */
   .benefits-strip {
